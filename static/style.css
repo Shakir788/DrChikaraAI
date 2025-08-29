@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    color: #2c2c2c;
+}
+.stChatMessage {
+    background: #E8F5E9;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 6px 0;
+}
+.stChatMessage[data-testid="stChatMessage-user"] {
+    background: #C8E6C9;
+}
+.stChatMessage[data-testid="stChatMessage-assistant"] {
+    background: #A5D6A7;
+}
+.header {
+    background: linear-gradient(to right, #4CAF50, #66BB6A);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.logo {
+    font-size: 2.0em;
+    color: #fff;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+footer:after {
+    content:'💊 Built by Mohammad for Saurabh Chikara.';
+    visibility: visible;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.chat-container {
+    height: 420px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #66BB6A #4CAF50;
+}
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-container::-webkit-scrollbar-thumb {
+    background-color: #66BB6A;
+    border-radius: 4px;
+}
+.chat-container::-webkit-scrollbar-track {
+    background: #4CAF50;
+}
